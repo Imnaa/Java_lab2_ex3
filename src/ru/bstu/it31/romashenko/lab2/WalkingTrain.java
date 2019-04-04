@@ -178,6 +178,7 @@ public class WalkingTrain {
             Logger.debug("Конец чтения из файла.");
         } catch (IOException ex) {
             Logger.error("Файл не найден. ", ex);
+            ex.printStackTrace();
 
             System.out.println(ex.getMessage());
         }
@@ -201,6 +202,7 @@ public class WalkingTrain {
             Logger.debug("В файл записали.");
         } catch (IOException ex) {
             Logger.error("В файл не записали. ", ex);
+            ex.printStackTrace();
 
             System.out.println(ex.getMessage());
         }
